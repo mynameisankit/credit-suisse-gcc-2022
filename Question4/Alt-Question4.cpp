@@ -10,42 +10,6 @@
 
 using namespace std;
 
-// #define FILLED '$'
-
-// void count(vector<string> &grid, vector<vector<int>> &cnt) {
-//     const int n = cnt.size();
-
-//     int top, left, top_left;
-//     for(int i = 0; i < n; i++) {
-//         for(int j = 0; j < n; j++) {
-//             top = (i ? cnt[i - 1][j] : 0);
-//             left = (j ? cnt[i][j - 1] : 0);
-//             top_left = ((i && j) ? cnt[i - 1][j - 1] : 0);
-
-//             cnt[i][j] = top + left - top_left + (grid[i][j] == FILLED);
-//         }
-//     }
-
-//     return;
-// }
-
-// int main() {
-//     ios_base::sync_with_stdio(false);
-//     cin.tie(NULL);
-
-//     int n;
-//     cin >> n;
-
-//     vector<string> grid(n);
-//     for(int i = 0; i < n; i++)
-//         cin >> grid[i];
-
-//     vector<vector<int>> cnt(n, vector<int>(n, 0));
-//     count(grid, cnt);
-
-//     return 0;
-// }
-
 bool sort_events(tuple<int, char, string> &a, tuple<int, char, string> &b) {
     return get<0>(a) < get<0>(b);
 }
